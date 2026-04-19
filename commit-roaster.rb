@@ -5,20 +5,20 @@
 class CommitRoaster < Formula
   desc "A CLI tool that roasts your terrible git commit messages."
   homepage "https://github.com/PranayD1807/Commit-Roaster"
-  version "0.1.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v0.1.1/commit-roaster_Darwin_x86_64.tar.gz"
-      sha256 "2f561faf594bb184b8470179bbff810944a3faf5b45ce4fb448c2c38ae6a166c"
+      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v1.0.0/commit-roaster_Darwin_x86_64.tar.gz"
+      sha256 "57002b80544aa4d276ee1636bf446c120b108b0a7d731e65af2168f5e29791fe"
 
       define_method(:install) do
         bin.install "commit-roaster"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v0.1.1/commit-roaster_Darwin_arm64.tar.gz"
-      sha256 "bcfc548d12f4a7a7593d3de9e9430d16077eb3c300d79a0c045d81284327b32b"
+      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v1.0.0/commit-roaster_Darwin_arm64.tar.gz"
+      sha256 "013d3c97b1ab4876f512916a1c30e987cb360e2b982231549bd01ff017af6620"
 
       define_method(:install) do
         bin.install "commit-roaster"
@@ -28,15 +28,15 @@ class CommitRoaster < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v0.1.1/commit-roaster_Linux_x86_64.tar.gz"
-      sha256 "14104f770ca0451d261e76f59080b616b8ffe6243412dcd1883bc61f2ecb9a07"
+      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v1.0.0/commit-roaster_Linux_x86_64.tar.gz"
+      sha256 "72cbdde3d7541b851d36718804222c08917af1f0eccf41222e48d8500a72917c"
       define_method(:install) do
         bin.install "commit-roaster"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v0.1.1/commit-roaster_Linux_arm64.tar.gz"
-      sha256 "8b18e42d8a85ff23706e41f9414cf7a614456d23e493a0e2ed88cb4f584b94af"
+      url "https://github.com/PranayD1807/Commit-Roaster/releases/download/v1.0.0/commit-roaster_Linux_arm64.tar.gz"
+      sha256 "f50bc86d4da2b7079c75248aa36dc7a55d5ae427a88c338ceaaf25a621b2d009"
       define_method(:install) do
         bin.install "commit-roaster"
       end
