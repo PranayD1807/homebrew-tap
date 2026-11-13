@@ -1,8 +1,8 @@
 class KeyboardRemap < Formula
   desc "Fix PC & Windows keyboards on macOS: persistent Alt <-> Cmd layout remapping"
   homepage "https://github.com/PranayD1807/keyboard-remap"
-  url "https://github.com/PranayD1807/keyboard-remap/archive/refs/tags/v0.0.1-beta.tar.gz"
-  sha256 "3fd6bd00f9d283a54d54a3fe355b1f627893fdeb372f8a69bd1bd9baa367fdfc"
+  url "https://github.com/PranayD1807/keyboard-remap/archive/refs/tags/v0.0.2-beta.tar.gz"
+  sha256 "793b0026e88847ab5a97e238e4e51c413245e8a7fccb23dd8a160e73fd36f503"
   license "MIT"
   head "https://github.com/PranayD1807/keyboard-remap.git", branch: "main"
 
@@ -31,7 +31,7 @@ class KeyboardRemap < Formula
           <key>CFBundlePackageType</key>
           <string>APPL</string>
           <key>CFBundleShortVersionString</key>
-          <string>0.0.1-beta</string>
+          <string>0.0.2-beta</string>
           <key>LSMinimumSystemVersion</key>
           <string>13.0</string>
           <key>NSHighResolutionCapable</key>
